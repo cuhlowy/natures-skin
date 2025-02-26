@@ -6,7 +6,7 @@ html {
 }
 
 body{
-    background: #c7ced4;
+    background: #DBCABEff;
     color: black;
     font-size: 30px;
     margin: 0;
@@ -22,15 +22,16 @@ body{
 }
 
 .header {
+    margin: 0;
     padding: 0;
-    text-align: center;
-    box-shadow: 0 2px 4px #51585e;
-    background: #778c9f;
-    position: relative;
-    z-index: 1000;
+    position: fixed; /* Keeps the header at the top */
     width: 100%;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #9a7e6d;
+    box-shadow: 0 2px 4px #51585e;
+
 }
 
 .header nav{
@@ -72,7 +73,7 @@ body{
     right: 0;
     height: 100%;
     width: 250px; /* Adjust width as needed */
-    background-color: #778c9f;
+    background-color: #C1A898ff;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     transform: translateX(100%); /* Initially slide out to the left */
     transition: transform 0.3s ease; /* Smooth transition */
@@ -166,22 +167,19 @@ body{
 
 
 .parallax {
-    background-image: url(../img/glaciers.jpg);
+    background-image: url(../img/AdobeStock_513544427.jpeg);
     min-height: 500px;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    margin:0;
+    margin: 0;
     padding: 0;
     position: relative;
     text-align: center;
     margin-top: 0;
-    padding-top:0;
+    padding-top: 0;
   }
 
   @media screen and (max-width: 768px) {
@@ -204,7 +202,6 @@ body{
     margin-top: 50px;
     padding: 100px;
     box-sizing:border-box;
-
 }
 
 @media screen and (max-width: 480px) {
@@ -218,7 +215,7 @@ body{
 
 
 .locations {
-    background: #9cb5c9;
+    background: #c69e85;
     box-shadow: 0 2px 4px #51585e;
     position: center;
     top: 0;
@@ -367,9 +364,70 @@ img {
     margin: 0 auto;
 }
 
+.newsletter-container {
+    background: #f9f9f9; /* Light background */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+.newsletter-container h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.newsletter-container p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.newsletter-form button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.newsletter-form button:hover {
+    background: #555;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .newsletter-container {
+        width: 95%;
+    }
+}
+
 
 footer {
-    background-color: #778c9f;
+    background-color: #C0815Fff;
     color: rgb(7, 6, 6);
     padding: 15px;
     text-align: center;
