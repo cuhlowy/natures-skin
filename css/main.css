@@ -64,25 +64,25 @@ body{
 }
 
 .offcanvas-nav {
-    position: relative; /* To position the menu within */
+    position: relative;
   }
 
   .menu {
-    position: fixed; /* Fixed position for overlay effect */
+    position: fixed;
     top: 164px;
     right: 0;
     height: 100%;
-    width: 250px; /* Adjust width as needed */
+    width: 250px;
     background-color: #C1A898ff;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    transform: translateX(100%); /* Initially slide out to the left */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); 
+    transform: translateX(100%); 
     transition: transform 0.3s ease; /* Smooth transition */
     z-index: 1000; 
   }
 
 
   .menu.expanded {
-    transform: translateX(0); /* Slide in when expanded */
+    transform: translateX(0);
   }
 
  /* Style the menu button */
@@ -113,28 +113,28 @@ body{
     border-radius: 2px;
 }
 
-/* Position the middle line */
+/* the middle line */
 .menu-toggle .hamburger {
     top: 50%;
     left: 50%;
     transform: translateY(-50%,-50%);
 }
 
-/* Position the top line */
+/* the top line */
 .menu-toggle .hamburger::before {
     top: -8px;
     left: 0;
     position: absolute;
 }
 
-/* Position the bottom line */
+/* the bottom line */
 .menu-toggle .hamburger::after {
     bottom: -8px;
     left: 0;
     position: absolute;
 }
 
-/* When menu is active (open), transform into an "X" */
+/* "X" */
 .menu-toggle.active .hamburger {
     background-color: transparent;
 }
@@ -151,17 +151,17 @@ body{
 
   @media (min-width: 768px) {
   .offcanvas-nav {
-      display: block; /* Show the full navigation on larger screens */
+      display: block; 
     }
   .menu {
-      display: block; /* Ensure menu is visible on larger screens */
-      position: static; /* Remove fixed positioning */
+      display: block; 
+      position: static; 
       width: auto;
-      transform: none; /* No need for transitions */
+      transform: none;
       box-shadow: none;
     }
   .menu-toggle {
-      display: none; /* Hide the toggle button on larger screens */
+      display: none;
     }
   }
 
@@ -206,9 +206,9 @@ body{
 
 @media screen and (max-width: 480px) {
     .logo {
-        font-size: 22px;  /* Reduce title size for small screens */
+        font-size: 22px;
         padding: 20px;
-        letter-spacing: 4px; /* Reduce letter spacing */
+        letter-spacing: 4px;
         max-width: 90%;
     }
 }
@@ -236,6 +236,15 @@ body{
 }
 
 
+.hero{
+    background: #DBCABEff;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+    box-sizing:border-box;
+}
+
+
 .text {
     text-align: center;
     padding: 50px;
@@ -246,6 +255,8 @@ body{
     padding: 50px;
     text-align: center;
 }
+
+
 
 .locationsandcontent-flex-row{
     display: flex;
@@ -260,8 +271,8 @@ body{
 }
 
 .locations-flex-row-item-1 {
-    flex: 1; /* Both take equal space */
-    min-width: 300px; /* Prevents them from shrinking too much */
+    flex: 1;
+    min-width: 300px;
 }
 
 .content-flex-row-item-2{
@@ -303,7 +314,7 @@ body{
 
 @media screen and (max-width: 768px) {
     .locationsandcontent-flex-row {
-        flex-direction: column; /* Stack elements */
+        flex-direction: column;
     }
 
     .image-description {
@@ -312,8 +323,8 @@ body{
     }
 
     .image-content img {
-        width: 90%;  /* Increase size for smaller screens */
-        max-width: 400px; /* Adjust max width */
+        width: 90%;
+        max-width: 400px;
     }
 
     .locations-flex-row-item-1,
@@ -369,32 +380,21 @@ img {
     color: #333;
     text-align: center;
     padding: 20px;
-    border-radius: 5px;
-    width: 90%;
-    max-width: 400px;
-    margin: 40px auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
     font-family: Arial, sans-serif;
 }
 
-.newsletter-container h2 {
-    font-size: 22px;
-    margin-bottom: 5px;
-}
-
-.newsletter-container p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: #666;
-}
 
 .newsletter-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
 .newsletter-form input {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -404,14 +404,14 @@ img {
 }
 
 .newsletter-form button {
-    background: #333;
+    background: #D29B78ff;
     color: white;
     border: none;
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
 }
 
 .newsletter-form button:hover {
