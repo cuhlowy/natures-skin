@@ -29,7 +29,7 @@ body{
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: #9a7e6d;
+    background-color: #c69e85;
     box-shadow: 0 2px 4px #51585e;
 
 }
@@ -73,10 +73,10 @@ body{
     right: 0;
     height: 100%;
     width: 250px;
-    background-color: #C1A898ff;
+    background-color: rgb(192, 163, 146);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); 
     transform: translateX(100%); 
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease; 
     z-index: 1000; 
   }
 
@@ -85,7 +85,6 @@ body{
     transform: translateX(0);
   }
 
- /* Style the menu button */
 .menu-toggle {
     background: none;
     border: none;
@@ -100,7 +99,6 @@ body{
     position: relative;
 }
 
-/* Create the three hamburger lines */
 .menu-toggle .hamburger,
 .menu-toggle .hamburger::before,
 .menu-toggle .hamburger::after {
@@ -113,28 +111,24 @@ body{
     border-radius: 2px;
 }
 
-/* the middle line */
 .menu-toggle .hamburger {
     top: 50%;
     left: 50%;
     transform: translateY(-50%,-50%);
 }
 
-/* the top line */
 .menu-toggle .hamburger::before {
     top: -8px;
     left: 0;
     position: absolute;
 }
 
-/* the bottom line */
 .menu-toggle .hamburger::after {
     bottom: -8px;
     left: 0;
     position: absolute;
 }
 
-/* "X" */
 .menu-toggle.active .hamburger {
     background-color: transparent;
 }
@@ -150,10 +144,7 @@ body{
 }
 
   @media (min-width: 768px) {
-  .offcanvas-nav {
-      display: block; 
-    }
-  .menu {
+  .menu, .offcanvas-nav {
       display: block; 
       position: static; 
       width: auto;
@@ -214,31 +205,11 @@ body{
 }
 
 
-.locations {
-    background: #c69e85;
-    box-shadow: 0 2px 4px #51585e;
-    position: center;
-    top: 0;
-   
-}
-.locations nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    box-sizing:border-box;
-}
-.locations nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 40px;
-    font-size: 14px;
-    position: relative;
-}
 
 
 .hero{
     background: #DBCABEff;
-    color: #fff;
+    color: #030303;
     text-align: center;
     padding: 100px;
     box-sizing:border-box;
@@ -389,7 +360,7 @@ img {
 
 .newsletter-form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 

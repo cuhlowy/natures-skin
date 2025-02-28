@@ -20,8 +20,12 @@
     <nav id="offcanvas-menu" class="menu">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="resources.html">Resources</a>
+        <a href="blog.html">Bestsellers</a>
+        <a href="resources.html">Skincare</a>
+        <a href="resources.html">Hair + Body</a>
+        <a href="contact.html">Join our newsletter!</a>
+
+
     </nav>
   </header>
 
@@ -32,13 +36,6 @@
   </div>
 
 
-  <div class="locations">
-    <nav>
-        <a href="#iceland"><h2>Iceland</h2></a>
-        <a href="#denmark"><h2>Denmark</h2></a>
-        <a href="#sweden"><h2>Sweden</h2></a>
-    </nav>
-  </div>
 
   <div class="hero">
     <h2>Welcome to Nature's Skin</h2>
@@ -75,27 +72,43 @@
   
   </div>
  
-
-<div class="top">
-  <a href="#top">Back to Top</a>
-</div>
      
 
 
   </div>
 
   <div class="newsletter-container">
+    <form action="./thank-you.html" method="post">
     <span>
     <h2>Join our newsletter to get the latest news and deals!</h2>
     <p>Subscribe to get travel inspiration, tips, and exclusive content straight to your inbox!</p>
     <form class="newsletter-form">
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit">Subscribe</button>
+      <div class="name-container">
+        <div class="input-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required autocomplete="name" autofocus>
+          
+        </div>
+       
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required autocomplete="email">
+      <span id="emailError" class="error"></span><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      
+      <button onclick="submitForm()">Sign Up</button>
     </form>
     <p class="privacy-text">No spam, unsubscribe anytime.</p>
   </span>
+    </form>`
 </div>
 
+<div class="top">
+  <a href="#top">Back to Top</a>
+</div>
 
   <footer> 
     <span>Made with ... </span>
